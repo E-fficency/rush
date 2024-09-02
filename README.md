@@ -6,5 +6,5 @@
   <li>Gabriel Matiolli</li>
   <li>Gustavo Berlanga RM:555298</li>
   <li>Leonardo Taschin</li>
-  <li>Vinicius Gardim</li>
+  <li>Vinicius Gardim rm:556013</li>
 </ul>
