@@ -1,14 +1,22 @@
-import Footer from "./components/Footer";
-import Nav from "./components/Nav";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import Erro from "./pages/Error";
 
 function App() {
-  return (
-    <>
-      <Nav />
-      <h1>Main</h1>
-      <Footer />
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+      errorElement: <Erro />,
+      // children: [
+      //   {
+      //     path: "/algo",
+      //     element: "<Algo />",
+      //   },
+      // ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
