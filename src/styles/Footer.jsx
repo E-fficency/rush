@@ -1,12 +1,16 @@
 import styled from "styled-components";
-  
+
 export const StyledFooter = styled.footer`
   width: 100%;
   height: 10vh;
-  background-color: #000000c0;
+  background-color: #1f1f1f;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 90vh;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.2);
 `;
 
 export const StyledDivButtonsFooter = styled.div`
