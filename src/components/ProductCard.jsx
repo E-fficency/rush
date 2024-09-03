@@ -1,15 +1,15 @@
 
-import { StyledCard } from "../styles/ProductStyle";
+import {StyledInfo, StyledCard } from "../styles/ProductStyle";
 
 function ProductCard({ produto, preco, src }) {
   return (
     <>
       <StyledCard>
         <img src={src} alt={produto} />
-        <div>
+        <StyledInfo>
           <h2>{produto}</h2>
           <p>R$ {preco}</p>
-        </div>
+        </StyledInfo>
       </StyledCard>
     </>
   );

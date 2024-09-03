@@ -8,7 +8,6 @@ function Home() {
     <>
       <Nav />
       <MenuBurger />
-      <h1>Main</h1>
       <ProductList />
       <Footer />
     </>
