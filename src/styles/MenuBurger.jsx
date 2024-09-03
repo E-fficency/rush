@@ -58,6 +58,10 @@ export const StyledSeparatorButtons = styled.div`
   align-items: start;
   gap: 1.5rem;
   width: 100%;
+  a{
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 export const StyledButtonSair = styled.button`

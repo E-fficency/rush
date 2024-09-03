@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Erro from "./pages/Error";
 import EmAlta from "./pages/EmAlta";
 import Carrinho from "./pages/Carrinho";
+import Perfil from "./pages/Perfil";
 
 function App() {
   const router = createBrowserRouter([
@@ -19,6 +20,10 @@ function App() {
     {
       path: "/carrinho",
       element: <Carrinho/>
+    },
+    {
+      path: "/perfil",
+      element: <Perfil/>
     }
   ]);
   return <RouterProvider router={router} />;
