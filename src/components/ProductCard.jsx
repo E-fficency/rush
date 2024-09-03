@@ -1,18 +1,17 @@
-import products from '../mocks/produtos.json'
+
 import { StyledCard } from "../styles/ProductStyle";
 
-function ProductCard() {
+function ProductCard({ produto, preco, src }) {
   return (
     <>
-    {products.map(produto => {
+    
       <StyledCard>
-        <img src={produto.src} alt={produto.produto} />
+        <img src={src} alt={produto} />
         <div>
-          <h2>{produto.produto}</h2>
-          <p>R$ {produto.preco}</p>
+          <h2>{produto}</h2>
+          <p>R$ {preco}</p>
         </div>
       </StyledCard>
-    }) }
     </>
   );
 };

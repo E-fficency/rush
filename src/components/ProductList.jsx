@@ -1,7 +1,8 @@
 import ProductCard from "./ProductCard";
 import { ContainerProducts } from "../styles/ProductStyle";
+import products from '../mocks/produtos.json';
 
-const ProductList = ({ products }) => {
+const ProductList = () => {
   return (
     <ContainerProducts>
       {products.map((product) => (

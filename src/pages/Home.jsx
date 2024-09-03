@@ -1,13 +1,14 @@
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
-import ProductCard from "../components/ProductCard";
+import ProductList from "../components/ProductList";
+
 
 function Home() {
   return (
     <>
       <Nav />
       <h1>Main</h1>
-      <ProductCard />
+      <ProductList/>
       <Footer />
     </>
   );
