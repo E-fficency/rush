@@ -1,9 +1,9 @@
-
+import { Link } from "react-router-dom";
 import {StyledInfo, StyledCard } from "../styles/ProductStyle";
 
-function ProductCard({ produto, preco, src }) {
+function ProductCard({id, produto, preco, src }) {
   return (
-    <>
+    <Link to={`/produto/${id}`}>
       <StyledCard>
         <img src={src} alt={produto} />
         <StyledInfo>
@@ -11,7 +11,7 @@ function ProductCard({ produto, preco, src }) {
           <p>R$ {preco}</p>
         </StyledInfo>
       </StyledCard>
-    </>
+    </Link>
   );
 };
 
