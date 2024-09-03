@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard";
 import { MainProduct, ContainerProducts } from "../styles/ProductStyle";
-import emAlta from "../mocks/alta.json";
+import emAlta from "../mocks/alta.jsx";
 import materialEsportivo from "../mocks/material-esportivo.json";
 import ofertas from "../mocks/ofertas.json";
 import Titulo from "./Titulo";

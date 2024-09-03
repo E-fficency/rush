@@ -1,7 +1,9 @@
-[
+import CamisaNikeInter from '../assets/images/produtos/camisa-nike-inter-de-milao.svg'
+
+const alta = [
     {
         "id": 1,
-        "src": "../src/assets/images/produtos/camisa-nike-inter-de-milao.svg",
+        src: "src/assets/images/produtos/camisa-nike-inter-de-milao.svg",
         "produto":"Camisa Nike Inter de Milão 2023/24 Torcedor Pro",
         "descricao": "As listras pretas e azuis da Inter de Milão recebem uma atualização para a camisa Home 2023/24. As listras icônicas têm um padrão de mosaico digital, celebrando tanto a sensação clássica quanto a arquitetura moderna da cidade antiga. O orgulho interno comemora a conexão entre a Inter de Milão e a cidade que eles chamam de lar. A nossa coleção Stadium combina detalhes da camisa de réplica com tecnologia antissuor para oferecer um look pronto para o jogo e inspirado no seu time favorito.",
         "preco": 299.99
@@ -28,3 +30,5 @@
         "preco": 199.99
     }
 ]
+
+export default alta

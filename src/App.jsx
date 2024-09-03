@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Erro from "./pages/Error";
 import EmAlta from "./pages/EmAlta";
 import Carrinho from "./pages/Carrinho";
+import Perfil from "./pages/Perfil";
 import Produto from "./pages/Produto";
 
 function App() {
@@ -22,9 +23,14 @@ function App() {
       element: <Carrinho/>
     },
     {
+      path: "/perfil",
+      element: <Perfil/>
+    },
+    {
       path: "/produto/:id",
       element: <Produto />
     }
+    
   ]);
   return <RouterProvider router={router} />;
 }

@@ -13,6 +13,7 @@ import {
 import ButtonMenuHamburger from "./ButtonMenuHamburger";
 import profile from "../assets/images/manox.png";
 import { botoes } from "../mocks/burgerbuttons";
+import { Link } from "react-router-dom";
 
 function MenuBurger({ isOpen }) {
   return (
@@ -21,7 +22,7 @@ function MenuBurger({ isOpen }) {
           <StyledImage src={profile} alt="" />
           <div>
             <StyledProfileName>Mano X</StyledProfileName>
-            <StyledButtonProfile>Ver perfil</StyledButtonProfile>
+            <Link to={'/perfil'}><StyledButtonProfile>Ver perfil</StyledButtonProfile> </Link>
           </div>
         </StyleProfileBlock>
         <Separator>&nbsp;</Separator>

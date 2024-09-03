@@ -12,13 +12,14 @@ import {
 } from "../styles/StyleCarrinho";
 import produtoImagem from "../assets/images/produtos/camisa-nike-inter-de-milao.svg";
 import { FiMenu } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Carrinho = () => {
   return (
     <>
       <StyledNav>
         <FiMenu fontSize={"2rem"} />
-        <IoCloseOutline fontSize={"2.5rem"} />
+        <Link to={'/'}><IoCloseOutline fontSize={"2.5rem"} /></Link>
       </StyledNav>
       <MainContainer>
         <Titulo>Carrinho</Titulo>
