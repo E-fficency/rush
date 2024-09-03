@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import emAlta from "../mocks/alta.json";
-import materialEsportivo from "../mocks/material-esportivo.json";
-import ofertas from "../mocks/ofertas.json";
+import emAlta from "../mocks/alta.jsx";
+import materialEsportivo from "../mocks/material-esportivo.jsx";
+import ofertas from "../mocks/ofertas.jsx";
 import NavProduct from "../components/NavProduct";
 import { IoHeartOutline } from "react-icons/io5";
 import {
