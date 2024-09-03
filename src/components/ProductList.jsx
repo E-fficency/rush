@@ -1,8 +1,8 @@
 import ProductCard from "./ProductCard";
 import { MainProduct, ContainerProducts } from "../styles/ProductStyle";
 import emAlta from "../mocks/alta.jsx";
-import materialEsportivo from "../mocks/material-esportivo.jsx";
-import ofertas from "../mocks/ofertas.jsx";
+import materialEsportivo from "../mocks/material-esportivo.json";
+import ofertas from "../mocks/ofertas.json";
 import Titulo from "./Titulo";
 import {Link} from 'react-router-dom'
 
