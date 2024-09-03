@@ -4,7 +4,6 @@ import { StyledCard } from "../styles/ProductStyle";
 function ProductCard({ produto, preco, src }) {
   return (
     <>
-    
       <StyledCard>
         <img src={src} alt={produto} />
         <div>

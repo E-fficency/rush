@@ -1,39 +1,58 @@
 import ProductCard from "./ProductCard";
-import { ContainerProducts } from "../styles/ProductStyle";
+import { MainProduct, ContainerProducts } from "../styles/ProductStyle";
 import emAlta from "../mocks/alta.json";
 import materialEsportivo from "../mocks/material-esportivo.json";
 import ofertas from "../mocks/ofertas.json";
+import Titulo from "./Titulo";
+import {Link} from 'react-router-dom'
 
 const ProductList = () => {
   return (
-    <ContainerProducts>
-      {emAlta.map((product) => (
-        <ProductCard
-          key={product.id}
-          produto={product.produto}
-          preco={product.preco}
-          src={product.src}
-        />
-      ))}
+    <>
+      <MainProduct>
+       <Link to={'/emalta'}><Titulo>Novos lançamentos</Titulo></Link>
+        <ContainerProducts>
+          {emAlta.map((product) => (
+            <ProductCard
+              key={product.id}
+              produto={product.produto}
+              preco={product.preco}
+              src={product.src}
+            />
+          ))}
+        </ContainerProducts>
+      </MainProduct>
 
-      {materialEsportivo.map((product) => (
-        <ProductCard
-          key={product.id}
-          produto={product.produto}
-          preco={product.preco}
-          src={product.src}
-        />
-      ))}
+      <MainProduct>
+        <Titulo>Em alta</Titulo>
+        <ContainerProducts>
+          {materialEsportivo.map((product) => (
+            <ProductCard
+              key={product.id}
+              produto={product.produto}
+              preco={product.preco}
+              src={product.src}
+            />
+          ))}
+        </ContainerProducts>
+      </MainProduct>
 
-      {ofertas.map((product) => (
-        <ProductCard
-          key={product.id}
-          produto={product.produto}
-          preco={product.preco}
-          src={product.src}
-        />
-      ))}
-    </ContainerProducts>
+      <MainProduct>
+
+        <Titulo>Material esportivo</Titulo>
+        <ContainerProducts>
+          {ofertas.map((product) => (
+            <ProductCard
+              key={product.id}
+              produto={product.produto}
+              preco={product.preco}
+              src={product.src}
+            />
+          ))}
+        </ContainerProducts>
+      </MainProduct>
+
+    </>
   );
 };
 
