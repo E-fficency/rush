@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { BiExit } from "react-icons/bi";
 import {
   Separator,
-  StyledBackgroundMenuBurger,
   StyledButtonProfile,
   StyledButtonSair,
   StyledImage,
@@ -14,11 +14,9 @@ import ButtonMenuHamburger from "./ButtonMenuHamburger";
 import profile from "../assets/images/manox.png";
 import { botoes } from "../mocks/burgerbuttons";
 
-function MenuBurger() {
+function MenuBurger({ isOpen }) {
   return (
-    <>
-      <StyledBackgroundMenuBurger />
-      <StyledMenuBurger>
+      <StyledMenuBurger style={{left: isOpen ? "0" : "-100%"}}>
         <StyleProfileBlock>
           <StyledImage src={profile} alt="" />
           <div>
@@ -26,7 +24,6 @@ function MenuBurger() {
             <StyledButtonProfile>Ver perfil</StyledButtonProfile>
           </div>
         </StyleProfileBlock>
-
         <Separator>&nbsp;</Separator>
         <StyledSeparatorButtons>
           {botoes.map((botao, index) => (
@@ -42,7 +39,6 @@ function MenuBurger() {
           <p>Sair da conta</p>
         </StyledButtonSair>
       </StyledMenuBurger>
-    </>
   );
 }
 

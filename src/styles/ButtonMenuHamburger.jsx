@@ -7,6 +7,11 @@ export const StyledDivButton = styled.div`
   gap: 1em;
   position: relative;
   width: 100%;
+  border-radius: 5px;
+  transition: all .3s ease-in;
+  &:hover {
+    background-color: #0000002d
+  }
 `;
 
 export const StyledIcon = styled.button`
