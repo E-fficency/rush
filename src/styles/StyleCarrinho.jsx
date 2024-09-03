@@ -14,9 +14,7 @@ export const CardCarrinho = styled.div`
     gap: 1rem;
     padding: 1.5rem;
     margin-top: 1.5rem;
-    background-color: #EFEEEE;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
+    border-bottom: solid 2px #000000d4;
     h2{
         font-size: 1.1rem;
         font-weight: 400;
