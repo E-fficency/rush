@@ -19,7 +19,7 @@ const Carrinho = () => {
     <>
       <StyledNav>
         <FiMenu fontSize={"2rem"} />
-        <Link to={'/'}><IoCloseOutline fontSize={"2.5rem"} /></Link>
+        <Link to={'/'}><IoCloseOutline fontSize={"2.5rem"} color="black"/></Link>
       </StyledNav>
       <MainContainer>
         <Titulo>Carrinho</Titulo>
