@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <Nav />
-      <MenuBurger />
+      {/* <MenuBurger /> */}
       <ProductList />
       <Footer />
     </>

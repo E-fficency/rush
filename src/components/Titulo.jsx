@@ -1,6 +1,13 @@
+import styled from "styled-components"
+
+const StyledTittle = styled.h1`
+    font-size: 1.5rem;
+    font-weight: 500;
+`
+
 function Titulo({children}){
     return(
-        <h1>{children}</h1>
+        <StyledTittle>{children}</StyledTittle>
     )
 }
 
