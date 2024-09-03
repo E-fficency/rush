@@ -15,6 +15,7 @@ const ProductList = () => {
           {emAlta.map((product) => (
             <ProductCard
               key={product.id}
+              id={product.id}
               produto={product.produto}
               preco={product.preco}
               src={product.src}
@@ -29,6 +30,7 @@ const ProductList = () => {
           {materialEsportivo.map((product) => (
             <ProductCard
               key={product.id}
+              id={product.id}
               produto={product.produto}
               preco={product.preco}
               src={product.src}
@@ -38,12 +40,12 @@ const ProductList = () => {
       </MainProduct>
 
       <MainProduct>
-
         <Titulo>Material esportivo</Titulo>
         <ContainerProducts>
           {ofertas.map((product) => (
             <ProductCard
               key={product.id}
+              id={product.id}
               produto={product.produto}
               preco={product.preco}
               src={product.src}
