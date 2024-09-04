@@ -10,7 +10,8 @@ import {
   StyledImg,
   ProductDetail,
   ProductButton,
-  ContainerIcon
+  ContainerIcon,
+  Gradient
 } from "../styles/ProductDetails";
 
 const Produto = () => {
@@ -38,8 +39,9 @@ const Produto = () => {
               <button>Tamanho</button>
               <button>Adicionar a sacola</button>
             </ProductButton>
+            <Gradient />
             <ContainerIcon>
-              <IoHeartOutline />     
+              <IoHeartOutline />
             </ContainerIcon>
           </ProductDetail>
         </ContainerProductDetails>
