@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { IoIosArrowDown } from "react-icons/io";
+
 
 export const MainProductDetails = styled.div`
   padding: 0 1.4rem;
@@ -34,12 +36,12 @@ export const ProductDetail = styled.div`
   z-index: 1;
 
   span {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.25rem;
     color: #b02b2b;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
   }
   p {
@@ -48,10 +50,38 @@ export const ProductDetail = styled.div`
   }
 `;
 
+export const AdicionarASacola = styled.button`
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+`
+
+
+export const DropDownTamanho = styled.select`
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 2.3rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBvbHlsaW5lIHBvaW50cz0iMyA2IDggMTEgMTMgNiIvPjwvc3ZnPg=='); 
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px; 
+`
+
 export const ProductButton = styled.div`
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.3rem;
 `;
 
 export const ContainerIcon = styled.div`

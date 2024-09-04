@@ -11,7 +11,9 @@ import {
   ProductDetail,
   ProductButton,
   ContainerIcon,
-  Gradient
+  Gradient,
+  AdicionarASacola,
+  DropDownTamanho
 } from "../styles/ProductDetails";
 
 const Produto = () => {
@@ -36,8 +38,15 @@ const Produto = () => {
             <h2>{product.produto}</h2>
             <p>{product.descricao}</p>
             <ProductButton>
-              <button>Tamanho</button>
-              <button>Adicionar a sacola</button>
+                <DropDownTamanho>
+                  <option value="">Tamanho</option>
+                  <option value="P">PP</option>
+                  <option value="P">P</option>
+                  <option value="M">M</option>
+                  <option value="G">G</option>
+                  <option value="G">GG</option>
+                </DropDownTamanho>
+              <AdicionarASacola>Adicionar a sacola</AdicionarASacola>
             </ProductButton>
             <Gradient />
             <ContainerIcon>
