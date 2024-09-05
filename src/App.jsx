@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Erro from "./pages/Error";
 import EmAlta from "./pages/EmAlta";
@@ -9,12 +9,11 @@ import Busca from './components/Busca'
 import FinalizarCompra from "./pages/FinalizarCompra";
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Home />,
       errorElement: <Erro />,
-      
     },
     {
       path: "/emalta",
