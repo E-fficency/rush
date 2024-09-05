@@ -4,7 +4,7 @@ const StyledTittle = styled.h3`
     font-weight: 500;
     color: #000;
     opacity: 70%;
-    margin-bottom: 0.8rem;
+    margin: 0.5rem 0rem;
 `
 
 function TituloFinalizarCompra({children}){

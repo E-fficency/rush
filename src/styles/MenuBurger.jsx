@@ -29,6 +29,7 @@ export const StyleProfileBlock = styled.div`
 export const StyledImage = styled.img`
   width: 6rem;
   height: 6rem;
+  border-radius: 10px;
 `;
 
 export const StyledProfileName = styled.h1`

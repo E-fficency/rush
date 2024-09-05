@@ -20,7 +20,7 @@ function App() {
       element: <EmAlta />
     },
     {
-      path: "/carrinho",
+      path: "/pedidos",
       element: <Carrinho/>
     },
     {
