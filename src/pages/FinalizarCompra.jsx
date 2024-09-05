@@ -25,10 +25,10 @@ function FinalizarCompra() {
         <Inputs>
           <TituloFinalizarCompra>Endereço de entrega</TituloFinalizarCompra>
           <StyledDivIcon bg={seta} position={96} size={"20px"}>
-            oi
+            Endereço principal
           </StyledDivIcon>
           <StyledDivIcon bg={plus} position={96} size={"20px"}>
-            oi
+            Adicionar novo endereço
           </StyledDivIcon>
         </Inputs>
         <Inputs>
