@@ -6,6 +6,7 @@ import Carrinho from "./pages/Carrinho";
 import Perfil from "./pages/Perfil";
 import Produto from "./pages/Produto";
 import Busca from './components/Busca'
+import FinalizarCompra from "./pages/FinalizarCompra";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ function App() {
     {
       path: "/busca",
       element: <Busca/>
+    },
+    {
+      path: "/finalizarcompra",
+      element: <FinalizarCompra />
     }
 
     

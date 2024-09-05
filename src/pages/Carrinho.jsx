@@ -43,7 +43,7 @@ const Carrinho = () => {
                 <h2>Total</h2>
                 <p>R$999,99</p>
             </CarrinhoFooterInfos>
-            <FinalizarCompra>Finalizar</FinalizarCompra>
+            <Link to={'/finalizarcompra'}><FinalizarCompra>Finalizar</FinalizarCompra></Link>
 
         </CarrinhoFooter>
     </>
