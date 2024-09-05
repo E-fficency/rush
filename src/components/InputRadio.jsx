@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styled from "styled-components";
 
 export const Radio = styled.div`
@@ -15,7 +16,7 @@ export const Radio = styled.div`
 function InputRadio({ label, type = "radio", name = "pagamentos", id }) {
   return (
     <Radio>
-      <label for={id}>{label}</label>
+      <label htmlFor={id}>{label}</label>
       <input type={type} id={id} name={name} />
     </Radio>
   );

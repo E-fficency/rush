@@ -31,6 +31,7 @@ function MenuBurger({ isOpen }) {
             <ButtonMenuHamburger
               title={botao.title}
               icon={botao.icon}
+              link={botao.link}
               key={index++}
             />
           ))}

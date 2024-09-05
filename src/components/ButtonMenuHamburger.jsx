@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   StyledDivButton,
   StyledIcon,
@@ -6,8 +7,9 @@ import {
 } from "../styles/ButtonMenuHamburger";
 
 /* eslint-disable react/prop-types */
-function ButtonMenuHamburger({ title, icon }) {
+function ButtonMenuHamburger({ title, icon, link }) {
   return (
+    <Link to={link} >
     <StyledDivButton>
       <StyledIcon>{icon}</StyledIcon>
       <StyledTitle>{title}</StyledTitle>
@@ -15,6 +17,7 @@ function ButtonMenuHamburger({ title, icon }) {
       {/* notificacao */}
       <StyledNotification>1</StyledNotification>
     </StyledDivButton>
+    </Link>
   );
 }
 

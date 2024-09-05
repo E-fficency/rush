@@ -56,9 +56,9 @@ export const StyledSeparatorButtons = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 1.5rem;
+  gap: 3rem;
   width: 100%;
-  a{
+  a {
     text-decoration: none;
     color: black;
   }

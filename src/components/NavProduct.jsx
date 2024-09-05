@@ -1,6 +1,5 @@
 import { StyledNav } from "../styles/Nav";
-import { IoArrowBackOutline } from "react-icons/io5";
-import { IoBagOutline } from "react-icons/io5";
+import { IoArrowBackOutline, IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 function Nav() {
