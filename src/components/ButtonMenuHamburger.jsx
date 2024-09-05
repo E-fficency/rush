@@ -9,14 +9,14 @@ import {
 /* eslint-disable react/prop-types */
 function ButtonMenuHamburger({ title, icon, link }) {
   return (
-    <Link to={link} >
-    <StyledDivButton>
-      <StyledIcon>{icon}</StyledIcon>
-      <StyledTitle>{title}</StyledTitle>
+    <Link to={link} style={{width: "100%"}}>
+      <StyledDivButton>
+        <StyledIcon>{icon}</StyledIcon>
+        <StyledTitle>{title}</StyledTitle>
 
-      {/* notificacao */}
-      <StyledNotification>1</StyledNotification>
-    </StyledDivButton>
+        {/* notificacao */}
+        <StyledNotification>1</StyledNotification>
+      </StyledDivButton>
     </Link>
   );
 }
