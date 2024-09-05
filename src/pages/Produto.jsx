@@ -4,6 +4,7 @@ import materialEsportivo from "../mocks/material-esportivo.jsx";
 import ofertas from "../mocks/ofertas.jsx";
 import NavProduct from "../components/NavProduct";
 import { IoHeartOutline } from "react-icons/io5";
+import Retangulo from "../assets/images/Rectangle.png"
 import {
   MainProductDetails,
   ContainerProductDetails,
@@ -48,7 +49,7 @@ const Produto = () => {
                 </DropDownTamanho>
               <AdicionarASacola>Adicionar a sacola</AdicionarASacola>
             </ProductButton>
-            <Gradient />
+            <Gradient src={Retangulo} />
             <ContainerIcon>
               <IoHeartOutline />
             </ContainerIcon>
