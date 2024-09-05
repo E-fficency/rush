@@ -26,7 +26,7 @@ const Carrinho = () => {
 
         <CardCarrinho>
           <div>
-            <img src={produtoImagem}/>
+            <img alt="Imagem do Produto" src={produtoImagem}/>
           </div>
           <CardCarrinhoInfos>
             <h2>Camiseta Nike Dri-FIT Strike Liverpool Masculina</h2>
@@ -43,7 +43,7 @@ const Carrinho = () => {
                 <h2>Total</h2>
                 <p>R$999,99</p>
             </CarrinhoFooterInfos>
-            <FinalizarCompra>Finalizar</FinalizarCompra>
+            <Link to={'/finalizarcompra'}><FinalizarCompra>Finalizar</FinalizarCompra></Link>
 
         </CarrinhoFooter>
     </>
