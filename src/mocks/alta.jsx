@@ -1,5 +1,3 @@
-import CamisaNikeInter from '../assets/images/produtos/camisa-nike-inter-de-milao.svg'
-
 const alta = [
     {
         "id": 1,

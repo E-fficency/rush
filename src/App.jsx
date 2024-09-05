@@ -5,6 +5,7 @@ import EmAlta from "./pages/EmAlta";
 import Carrinho from "./pages/Carrinho";
 import Perfil from "./pages/Perfil";
 import Produto from "./pages/Produto";
+import Busca from './components/Busca'
 
 function App() {
   const router = createBrowserRouter([
@@ -29,7 +30,12 @@ function App() {
     {
       path: "/produto/:id",
       element: <Produto />
+    },
+    {
+      path: "/busca",
+      element: <Busca/>
     }
+
     
   ]);
   return <RouterProvider router={router} />;

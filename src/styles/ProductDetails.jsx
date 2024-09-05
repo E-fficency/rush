@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { IoIosArrowDown } from "react-icons/io";
-
 
 export const MainProductDetails = styled.div`
   padding: 0 1.4rem;
