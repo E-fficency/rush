@@ -14,7 +14,6 @@ function App() {
       path: "/",
       element: <Home />,
       errorElement: <Erro />,
-      
     },
     {
       path: "/emalta",

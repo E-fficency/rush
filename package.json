@@ -5,8 +5,8 @@
   "type": "module",
   "homepage": "https://e-fficency.github.io/front-cp4/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
