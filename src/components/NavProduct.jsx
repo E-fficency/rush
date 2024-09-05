@@ -6,7 +6,7 @@ function Nav() {
   return (
     <StyledNav>
       <Link to={'/'}><IoArrowBackOutline fontSize={"2em"} color={'black'}/></Link>
-      <IoBagOutline fontSize={"2em"}/>
+      <Link to={'/pedidos'}><IoBagOutline fontSize={"2em"} color={'black'}/></Link>
     </StyledNav>
   );
 }
