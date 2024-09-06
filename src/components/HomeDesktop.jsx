@@ -13,7 +13,7 @@ function HomeDesktop({flex, justify='start', img, produto, titulo, descricao, ro
             <h4>{produto}</h4>
             <h2>{titulo}</h2>
             <h3>{descricao}</h3>
-            <Link to={rota}><Button>Compre agora</Button></Link>
+            <Link to={rota} style={{textDecoration: 'none'}}><Button>Compre agora</Button></Link>
           </Infos>
         </InfoProducts>
     </>

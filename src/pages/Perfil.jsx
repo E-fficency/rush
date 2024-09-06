@@ -5,8 +5,13 @@ import { InfoContainerPerfil, SobreVoce } from "../styles/StylePerfil";
 import ManoX from '../assets/images/manox.png'
 import { Link } from "react-router-dom";
 import CardPerfil from "../components/CardPerfil";
+import { useEffect } from "react";
 
 const Perfil = () => {
+
+  useEffect(() => {
+    document.title = 'Rush | Perfil'
+  })
   return (
     <>
       <StyledNav>

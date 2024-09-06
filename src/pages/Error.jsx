@@ -1,8 +1,13 @@
 import { TbMoodSad } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { ButtonError, ContentContainer, ErrorMessage, MainContainerError, MainText, PageNotFound } from "../styles/StyleError";
+import { useEffect } from "react";
 
 function Erro() {
+
+  useEffect(() => {
+    document.title = 'Rush | Error'
+  })
   return (
     <MainContainerError>
       <ContentContainer>
