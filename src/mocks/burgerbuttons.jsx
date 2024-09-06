@@ -10,8 +10,8 @@ export const botoes = [
   },
   {
     icon: <FaRegHeart />,
-    title: "Carrinho de compras",
-    link: "/pedidos",
+    title: "Lista de desejos",
+    link: "/listadedesejos",
   },
   {
     icon: <AiOutlineShopping />,

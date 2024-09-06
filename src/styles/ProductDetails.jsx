@@ -110,7 +110,7 @@ export const ContainerIcon = styled.div`
   }
   transition: all 0.2s ease-out;
   &:hover {
-    transform: translateY(2px);
+    transform: translateY(-2px);
   }
 `;
 

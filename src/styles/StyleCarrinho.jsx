@@ -8,6 +8,7 @@ export const CardCarrinho = styled.div`
     img{
         width: 100px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 10px
     }
     display: flex;
     align-items: center;
@@ -32,6 +33,7 @@ export const CardCarrinhoInfos = styled.div`
 export const CardCarrinhoBottom = styled.div`
     display: flex;
     justify-content:space-between;
+    align-items: center;
     p{
         color: #B02B2B;
         font-size: 1.1rem
@@ -74,4 +76,14 @@ export const FinalizarCompra = styled.button`
     border-radius: 10px;
     font-size: 1.3rem;
     padding: 0.5rem 2rem;
+`
+
+export const DeleteItemButton = styled.button`
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    padding: 0.5rem;
+    background: transparent;
+    cursor: pointer;
 `
