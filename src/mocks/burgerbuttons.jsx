@@ -11,7 +11,7 @@ export const botoes = [
   {
     icon: <FaRegHeart />,
     title: "Carrinho de compras",
-    link: "/carrinho",
+    link: "/pedidos",
   },
   {
     icon: <AiOutlineShopping />,
