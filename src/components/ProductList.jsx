@@ -5,7 +5,6 @@ import materialEsportivo from "../mocks/material-esportivo.jsx";
 import ofertas from "../mocks/ofertas.jsx";
 import Titulo from "./Titulo";
 import { Link } from "react-router-dom";
-import { MainContainer } from "../styles/StyleBusca.jsx";
 
 const ProductList = () => {
   return (
@@ -29,7 +28,9 @@ const ProductList = () => {
         </MainProduct>
 
         <MainProduct>
-          <Titulo>Em alta</Titulo>
+        <Link to={"/materialesportivo"}>
+          <Titulo>Material Esportivo</Titulo>
+        </Link>
           <ContainerProducts>
             {materialEsportivo.map((product) => (
               <ProductCard
@@ -44,7 +45,9 @@ const ProductList = () => {
         </MainProduct>
 
         <MainProduct>
-          <Titulo>Material esportivo</Titulo>
+        <Link to={"/ofertas"}>    
+          <Titulo>Ofertas</Titulo>
+        </Link>
           <ContainerProducts>
             {ofertas.map((product) => (
               <ProductCard

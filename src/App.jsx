@@ -2,6 +2,8 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Erro from "./pages/Error";
 import EmAlta from "./pages/EmAlta";
+import MaterialEsportivo from "./pages/MaterialEsportivo";
+import Ofertas from "./pages/Ofertas";
 import Carrinho from "./pages/Carrinho";
 import Perfil from "./pages/Perfil";
 import Produto from "./pages/Produto";
@@ -19,6 +21,14 @@ function App() {
     {
       path: "/emalta",
       element: <EmAlta />
+    },
+    {
+      path: "/materialesportivo",
+      element: <MaterialEsportivo />
+    },
+    {
+      path: "/ofertas",
+      element: <Ofertas />
     },
     {
       path: "/pedidos",

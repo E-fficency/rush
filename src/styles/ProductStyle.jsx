@@ -27,8 +27,7 @@ export const ContainerProducts = styled.div`
 export const MainProduct = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
-  margin: 1rem 0;
+  padding: 1rem 1rem;
   gap: 1.5rem;
   a{
     text-decoration: none;
