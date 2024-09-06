@@ -8,8 +8,13 @@ import {
 import { IoArrowBackOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import check from "../assets/images/finalizar/check.svg";
+import { useEffect } from "react";
 
 const PedidoRealizado = () => {
+
+  useEffect(() => {
+    document.title = 'Rush | Pedido realizado!'
+  })
   return (
     <>
       <PedidoRealizadoStyledNav>

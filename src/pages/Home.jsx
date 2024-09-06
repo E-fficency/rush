@@ -4,8 +4,13 @@ import { Container } from "../styles/StyleHomeDesktop";
 import ProductList from "../components/ProductList";
 import HomeDesktop from "../components/HomeDesktop";
 import homeData from '../mocks/homeData'
+import { useEffect } from "react";
 
 function Home() {
+
+  useEffect(() => {
+    document.title = 'Rush | Home'
+  })
   return (
     <>
       <Nav />

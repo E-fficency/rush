@@ -10,8 +10,13 @@ import {
   StyledDivIcon,
 } from "../styles/FinalizarCompra";
 import FooterCompra from "../components/FooterCompra";
+import { useEffect } from "react";
 
 function FinalizarCompra() {
+
+  useEffect(() => {
+    document.title = 'Rush | Finalizar compra'
+  })
   return (
     <>
       <NavProduct />

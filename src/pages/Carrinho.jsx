@@ -33,6 +33,7 @@ const Carrinho = () => {
       }
     }
     pegarCarrinho()
+    document.title = 'Rush | Pedidos'
   }, [])
 
   const deletarItem = (itemId) => {
@@ -55,8 +56,6 @@ const Carrinho = () => {
       window.location.reload()
     }, 1000);
   }
-
-  console.log(carrinho)
 
   return (
     <>
