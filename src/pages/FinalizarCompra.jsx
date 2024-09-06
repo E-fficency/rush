@@ -38,7 +38,7 @@ function FinalizarCompra() {
           </StyledDivIcon>
         </Inputs>
       </ContainerInput>
-
+    
       <FooterCompra />
     </>
   );

@@ -53,4 +53,6 @@ export const StyledInfo = styled.div`
   }
 `
 
-
+export const MainContainerProduct = styled.main`
+  margin-bottom: 4rem;
+`
