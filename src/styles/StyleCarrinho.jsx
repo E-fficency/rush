@@ -11,6 +11,7 @@ export const CardCarrinho = styled.div`
     }
     display: flex;
     align-items: center;
+    position: relative;
     gap: 1rem;
     padding: 1.5rem;
     margin-top: 1.5rem;
