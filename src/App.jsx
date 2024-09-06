@@ -7,6 +7,7 @@ import Perfil from "./pages/Perfil";
 import Produto from "./pages/Produto";
 import Busca from './components/Busca'
 import FinalizarCompra from "./pages/FinalizarCompra";
+import PedidoRealizado from "./pages/PedidoRealizado";
 
 function App() {
   const router = createHashRouter([
@@ -38,6 +39,10 @@ function App() {
     {
       path: "/finalizarcompra",
       element: <FinalizarCompra />
+    },
+    {
+      path: "pedidorealizado",
+      element: <PedidoRealizado/>   
     }
 
     

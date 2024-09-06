@@ -13,7 +13,8 @@ export const Footer = styled.footer`
   z-index: 100;
   bottom: 0;
   gap: 1rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
 `;
 
 export const InfoCompra = styled.footer`

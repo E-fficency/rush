@@ -1,5 +1,6 @@
 import { FinalizarCompra } from "../styles/StyleCarrinho";
 import { Footer, InfoCompra, StyledValor } from "../styles/FooterCompra";
+import { Link } from "react-router-dom";
 
 function FooterCompra() {
   return (
@@ -14,7 +15,7 @@ function FooterCompra() {
           <span>R$999,00</span>
         </StyledValor>
       </InfoCompra>
-      <FinalizarCompra>Finalizar compra</FinalizarCompra>
+      <Link style={{width: '100%'}} to={'/pedidorealizado'}><FinalizarCompra>Finalizar compra</FinalizarCompra></Link>
     </Footer>
   );
 }
