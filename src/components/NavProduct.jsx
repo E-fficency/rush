@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { StyledNav } from "../styles/Nav";
+import { StyledNav } from "../styles/StyleNav";
 import { IoArrowBackOutline, IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 

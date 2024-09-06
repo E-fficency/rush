@@ -1,6 +1,6 @@
 import { TbMoodSad } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { ButtonError, ContentContainer, ErrorMessage, MainContainerError, MainText, PageNotFound } from "../styles/Error";
+import { ButtonError, ContentContainer, ErrorMessage, MainContainerError, MainText, PageNotFound } from "../styles/StyleError";
 
 function Erro() {
   return (

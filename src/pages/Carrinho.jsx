@@ -1,5 +1,5 @@
 import Titulo from "../components/Titulo";
-import { StyledNav } from "../styles/Nav";
+import { StyledNav } from "../styles/StyleNav";
 import { IoCloseOutline } from "react-icons/io5";
 import {
   CardCarrinho,
@@ -15,7 +15,7 @@ import { FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MenuBurger from "../components/MenuBurger";
-import { StyledBackgroundMenuBurger } from "../styles/MenuBurger";
+import { StyledBackgroundMenuBurger } from "../styles/StyleMenuBurguer";
 import { IoIosCloseCircle } from "react-icons/io";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import {
   MainProductDetailsHome,
   ContainerProducts,
-} from "../styles/ProductStyle";
+} from "../styles/StyleProduct.jsx";
 
 function ProductPage({ products }) {
   return (

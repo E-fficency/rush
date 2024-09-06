@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard";
-import { MainProduct, ContainerProducts, MainContainerProduct } from "../styles/ProductStyle";
+import { MainProduct, ContainerProducts, MainContainerProduct } from "../styles/StyleProduct.jsx";
 import emAlta from "../mocks/alta.jsx";
 import materialEsportivo from "../mocks/material-esportivo.jsx";
 import ofertas from "../mocks/ofertas.jsx";

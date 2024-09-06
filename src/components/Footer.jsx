@@ -6,7 +6,7 @@ import {
   StyledButtonFooter,
   StyledDivButtonsFooter,
   StyledFooter,
-} from "../styles/Footer";
+} from "../styles/StyleFooter";
 
 function Footer() {
   return (

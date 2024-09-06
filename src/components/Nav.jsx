@@ -1,9 +1,9 @@
 import { FiMenu } from "react-icons/fi";
-import { StyledNav } from "../styles/Nav";
+import { StyledNav } from "../styles/StyleNav";
 import { CiSearch } from "react-icons/ci";
 import MenuBurger from "./MenuBurger";
 import { useState } from "react";
-import { StyledBackgroundMenuBurger } from "../styles/MenuBurger";
+import { StyledBackgroundMenuBurger } from "../styles/StyleMenuBurguer";
 import Busca from "./Busca";
 import logo from '../assets/images/logo.svg'
 

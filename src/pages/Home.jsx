@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
-import { Container } from "../styles/HomeDesktop";
+import { Container } from "../styles/StyleHomeDesktop";
 import ProductList from "../components/ProductList";
 import HomeDesktop from "../components/HomeDesktop";
 import homeData from '../mocks/homeData'

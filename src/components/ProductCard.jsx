@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import {StyledInfo, StyledCard } from "../styles/ProductStyle";
+import {StyledInfo, StyledCard } from "../styles/StyleProduct";
 
 function ProductCard({id, produto, preco, src }) {
   return (
