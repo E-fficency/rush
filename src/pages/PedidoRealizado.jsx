@@ -28,7 +28,7 @@ const PedidoRealizado = () => {
           </PedidoRealizadoTitulo>
 
           <PedidoRealizadoParagrafo>
-            O pedido <b>24585</b> foi confirmado com sucesso e já enviamos a uma
+            O pedido <b>24585</b> foi confirmado com sucesso e já enviamos uma
             cópia do comprovante para seu email
           </PedidoRealizadoParagrafo>
 

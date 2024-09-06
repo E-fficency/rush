@@ -1,5 +1,5 @@
 import Titulo from "../components/Titulo";
-import { StyledNav } from "../styles/Nav";
+import { StyledNav } from "../styles/StyleNav";
 import { IoCloseOutline } from "react-icons/io5";
 import {
   CardCarrinho,
@@ -7,6 +7,7 @@ import {
   CardCarrinhoInfos,
   CarrinhoFooter,
   CarrinhoFooterInfos,
+  DeleteItemButton,
   FinalizarCompra,
   MainContainer,
 } from "../styles/StyleCarrinho";
@@ -14,8 +15,8 @@ import { FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MenuBurger from "../components/MenuBurger";
-import { StyledBackgroundMenuBurger } from "../styles/MenuBurger";
-import { FaTrash } from "react-icons/fa6";
+import { StyledBackgroundMenuBurger } from "../styles/StyleMenuBurguer";
+import { IoIosCloseCircle } from "react-icons/io";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -41,7 +42,7 @@ const Carrinho = () => {
     localStorage.setItem("carrinho", novoCarrinho)
     toast.success('Produto deletado com sucesso!', {
       position: "top-right",
-      autoClose: 5000,
+      autoClose: 2000,
       hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: true,
@@ -52,7 +53,7 @@ const Carrinho = () => {
     });
     setTimeout(() => {
       window.location.reload()
-    }, 3000);
+    }, 1000);
   }
 
   console.log(carrinho)
@@ -81,6 +82,9 @@ const Carrinho = () => {
           carrinho.map((item, index) => {
             return (
               <CardCarrinho key={index++}>
+                <DeleteItemButton onClick={() => deletarItem(item.id)}>
+                  <IoIosCloseCircle size={23} color="#f00404"/>
+                </DeleteItemButton>
                 <div>
                   <img alt="Imagem do Produto" src={item.src} />
                 </div>
@@ -91,9 +95,6 @@ const Carrinho = () => {
                     <p>{item.preco}</p>
                   </CardCarrinhoBottom>
                 </CardCarrinhoInfos>
-                <button style={{ position: "absolute", right: '1rem', border: "1px solid #d4d4d4", padding: '1rem', borderRadius: 5, background: "transparent", cursor: "pointer" }} onClick={() => deletarItem(item.id)}>
-                  <FaTrash />
-                </button>
               </CardCarrinho>
             )
           })

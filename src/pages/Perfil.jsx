@@ -1,5 +1,5 @@
 import { IoIosArrowRoundBack } from "react-icons/io";
-import { StyledNav } from "../styles/Nav";
+import { StyledNav } from "../styles/StyleNav";
 import { MainContainer } from "../styles/StyleCarrinho";
 import { InfoContainerPerfil, SobreVoce } from "../styles/StylePerfil";
 import ManoX from '../assets/images/manox.png'

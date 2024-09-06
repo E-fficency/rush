@@ -9,7 +9,7 @@ import {
   StyledProfileName,
   StyledSeparatorButtons,
   StyleProfileBlock,
-} from "../styles/MenuBurger";
+} from "../styles/StyleMenuBurguer";
 import ButtonMenuHamburger from "./ButtonMenuHamburger";
 import profile from "../assets/images/manox.png";
 import { botoes } from "../mocks/burgerbuttons";

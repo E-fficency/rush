@@ -1,10 +1,11 @@
 import { FiMenu } from "react-icons/fi";
-import { StyledNav } from "../styles/Nav";
+import { StyledNav } from "../styles/StyleNav";
 import { CiSearch } from "react-icons/ci";
 import MenuBurger from "./MenuBurger";
 import { useState } from "react";
-import { StyledBackgroundMenuBurger } from "../styles/MenuBurger";
+import { StyledBackgroundMenuBurger } from "../styles/StyleMenuBurguer";
 import Busca from "./Busca";
+import logo from '../assets/images/logo-mobile.svg'
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,7 @@ function Nav() {
   return (
     <StyledNav>
       <FiMenu fontSize={"2em"} onClick={() => setIsOpen(!isOpen)} />
+        <img src={logo} alt="" />
       <CiSearch fontSize={"2em"} onClick={() => setIsBuscaOpen(!isBuscaOpen)} />
       <MenuBurger isOpen={isOpen} />
       <Busca isOpen={isBuscaOpen} setIsOpen={setIsBuscaOpen} />

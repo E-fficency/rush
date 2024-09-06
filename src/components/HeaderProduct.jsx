@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {StyledNav} from "../styles/Nav"
+import {StyledNav} from "../styles/StyleNav"
 import filter from "../assets/images/filter.svg"
 
 const ContainerInfo = styled.div`

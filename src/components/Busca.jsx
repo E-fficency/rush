@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { StyledNav } from "../styles/Nav";
+import { StyledNav } from "../styles/StyleNav";
 import {
   Categories,
   Item,

@@ -10,6 +10,7 @@ import Produto from "./pages/Produto";
 import Busca from './components/Busca'
 import FinalizarCompra from "./pages/FinalizarCompra";
 import PedidoRealizado from "./pages/PedidoRealizado";
+import ListaDeDesejos from "./pages/ListaDeDesejos";
 
 function App() {
   const router = createHashRouter([
@@ -53,6 +54,10 @@ function App() {
     {
       path: "pedidorealizado",
       element: <PedidoRealizado/>   
+    },
+    {
+      path: "/listadedesejos",
+      element: <ListaDeDesejos/> 
     }
 
     
