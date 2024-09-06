@@ -30,27 +30,32 @@ const Produto = () => {
 
   const [favoritos, setFavoritos] = useState([]);
 
-  useEffect(() => {
-    const favoritosSalvos = localStorage.getItem("favoritos");
-    if (favoritosSalvos) {
-      setFavoritos(JSON.parse(favoritosSalvos));
-    }
-  }, []);
+useEffect(() => {
+  const favoritosSalvos = localStorage.getItem("favoritos");
+  if (favoritosSalvos) {
+    setFavoritos(JSON.parse(favoritosSalvos));
+  }
+}, []);
 
-  const salvarNoLocalStorage = (novosFavoritos) => {
-    localStorage.setItem("favoritos", JSON.stringify(novosFavoritos));
-  };
+const salvarNoLocalStorage = (novosFavoritos) => {
+  localStorage.setItem("favoritos", JSON.stringify(novosFavoritos));
+};
 
-  const toggleFavorito = (id) => {
-    let novosFavoritos;
-    if (favoritos.includes(id)) {
-      novosFavoritos = favoritos.filter((fav) => fav !== id);
-    } else {
-      novosFavoritos = [...favoritos, id];
-    }
-    setFavoritos(novosFavoritos);
-    salvarNoLocalStorage(novosFavoritos);
-  };
+const toggleFavorito = (id, nome, src) => {
+  let novosFavoritos;
+  
+  const itemExiste = favoritos.some((fav) => fav.id === id);
+  if (itemExiste) {
+    novosFavoritos = favoritos.filter((fav) => fav.id !== id);
+  } else {
+    novosFavoritos = [...favoritos, { id, nome, src }];
+  }
+
+  setFavoritos(novosFavoritos);
+  salvarNoLocalStorage(novosFavoritos);
+};
+
+  const isFavorito = favoritos.some((fav) => fav.id === id);
 
   if (!product) {
     return <p>Não encontrado</p>;
@@ -108,10 +113,11 @@ const Produto = () => {
               </AdicionarASacola>
             </ProductButton>
             <Gradient src={Retangulo} />
-            <ContainerIcon onClick={() => toggleFavorito(id)}>
+            <ContainerIcon onClick={() => toggleFavorito(id, product.produto, product.src)}>
               {/* <IoHeartOutline /> */}
               {/* <IoHeartSharp /> */}
-              <IoHeartOutline />
+              {isFavorito ? <IoHeartSharp/> : <IoHeartOutline/>}
+
             </ContainerIcon>
           </ProductDetail>
         </ContainerProductDetails>

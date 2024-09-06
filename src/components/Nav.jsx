@@ -5,7 +5,7 @@ import MenuBurger from "./MenuBurger";
 import { useState } from "react";
 import { StyledBackgroundMenuBurger } from "../styles/StyleMenuBurguer";
 import Busca from "./Busca";
-import logo from '../assets/images/logo.svg'
+import logo from '../assets/images/logo-mobile.svg'
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
