@@ -1,14 +1,14 @@
 import ProductCard from "../components/ProductCard.jsx";
 import Footer from "../components/Footer";
 import {
-  MainProduct,
+  MainProductDetailsHome,
   ContainerProducts,
 } from "../styles/ProductStyle";
 
 function ProductPage({ products }) {
   return (
     <>
-      <MainProduct>
+      <MainProductDetailsHome>
         <ContainerProducts>
           {products.map((product) => (
             <ProductCard
@@ -20,7 +20,7 @@ function ProductPage({ products }) {
             />
           ))}
         </ContainerProducts>
-      </MainProduct>
+      </MainProductDetailsHome>
       <Footer />
     </>
   );

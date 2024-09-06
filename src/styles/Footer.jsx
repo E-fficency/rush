@@ -11,6 +11,10 @@ export const StyledFooter = styled.footer`
   z-index: 100;
   top: 90dvh;
   box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.2);
+  @media (min-width: 600px) {
+    display: none;
+  }
+
 `;
 
 export const StyledDivButtonsFooter = styled.div`

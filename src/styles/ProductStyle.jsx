@@ -33,7 +33,23 @@ export const MainProduct = styled.div`
     text-decoration: none;
     color: #000;
   }
+  @media (min-width: 600px) {
+   display: none;
+  }
 `
+
+export const MainProductDetailsHome = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  gap: 1.5rem;
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+`
+
+
 
 export const StyledInfo = styled.div`
   display: flex;
