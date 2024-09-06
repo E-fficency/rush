@@ -29,6 +29,8 @@ export const MainContainerPedidoRealizado = styled.main`
     img{
         margin-bottom: 1.5rem;
         width: 100px;
+        border-radius: 999px;
+        box-shadow: #0077e5c9 0px 12px 55px, #0077e5b5 1px -4px 30px, #0077e5c9 1px -1px 6px, #0077e599 0px 12px 13px, #0077e552 0px -3px 5px;
     }
 `
 export const PedidoRealizadoTitulo = styled.h1`
