@@ -8,7 +8,7 @@ const NavDesktop = () => {
     return (  
         <StyledNavDesktop>
             <ItemNavDesktop>
-                <img src={logo} alt="Logo" />
+               <Link to={'/'}><img src={logo} alt="Logo" /></Link> 
             </ItemNavDesktop>
             <ItemNavDesktop>
                 <button>Lançamentos</button>
