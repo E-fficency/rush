@@ -40,7 +40,7 @@ export const MainProduct = styled.div`
 
 export const MainProductDetailsHome = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1rem 1rem;
   gap: 1.5rem;
   a{

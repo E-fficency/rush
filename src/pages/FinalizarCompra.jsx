@@ -1,4 +1,5 @@
 import NavProduct from "../components/NavProduct";
+import NavDesktop from "../components/NavDesktop";
 import InputRadio from "../components/InputRadio";
 import TituloFinalizarCompra from "../components/TituloFinalizarCompra";
 import SvgCupom from "../assets/images/finalizar/cupom.svg";
@@ -20,6 +21,7 @@ function FinalizarCompra() {
   return (
     <>
       <NavProduct />
+      <NavDesktop/>
       <ContainerInput>
         <Inputs>
           <TituloFinalizarCompra>Método de pagamento</TituloFinalizarCompra>

@@ -6,20 +6,30 @@ import { useEffect } from "react";
 import NavDesktop from "../components/NavDesktop.jsx";
 
 function MaterialEsportivo() {
-  const produtosMaterialEsportivo = [...materialEsportivo, ...materialEsportivo, ...materialEsportivo];
+  const produtosMaterialEsportivo = [
+    ...materialEsportivo,
+    ...materialEsportivo,
+    ...materialEsportivo,
+  ];
 
   useEffect(() => {
-    document.title = 'Rush | Material esportivo'
-  })
-  return(
+    document.title = "Rush | Material esportivo";
+  });
+  return (
     <>
-    <NavDesktop/>
+      <NavDesktop />
       <Nav />
-      <HeaderProduct titulo='Material esportivo' subtitulo='Chuteira, tênis entre outros'  />
-      <ProductPage products={produtosMaterialEsportivo} />;
+      <HeaderProduct
+        titulo="Material esportivo"
+        subtitulo="Chuteira, tênis entre outros"
+      />
+      <ProductPage
+        products={produtosMaterialEsportivo}
+        titulo="Material esportivo"
+      />
+      ;
     </>
-  ) 
-
+  );
 }
 
 export default MaterialEsportivo;

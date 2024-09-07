@@ -19,6 +19,7 @@ import {
 import { useEffect, useState } from "react";
 import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NavDesktop from "../components/NavDesktop.jsx";
 
 const Produto = () => {
   const { id } = useParams();
@@ -83,6 +84,7 @@ const Produto = () => {
   return (
     <>
       <ToastContainer />
+      <NavDesktop />
       <NavProduct />
       <MainProductDetails>
         <ContainerProductDetails>
@@ -111,7 +113,9 @@ const Produto = () => {
               </AdicionarASacola>
             </ProductButton>
             <Gradient src={Retangulo} />
-            <ContainerIcon onClick={() => toggleFavorito(id, product.produto, product.src)}>
+            <ContainerIcon
+              onClick={() => toggleFavorito(id, product.produto, product.src)}
+            >
               {isFavorito ? <IoHeartSharp /> : <IoHeartOutline />}
             </ContainerIcon>
           </ProductDetail>

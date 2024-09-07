@@ -16,7 +16,7 @@ function EmAlta() {
     <NavDesktop/>
       <Nav/>
       <HeaderProduct titulo='Em alta' subtitulo='Novidades' />
-      <ProductPage products={produtosEmAlta} />
+      <ProductPage products={produtosEmAlta} titulo={"Em alta"} />
     </>
   );
 }

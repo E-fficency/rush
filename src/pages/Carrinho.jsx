@@ -17,31 +17,32 @@ import { useEffect, useState } from "react";
 import MenuBurger from "../components/MenuBurger";
 import { StyledBackgroundMenuBurger } from "../styles/StyleMenuBurguer";
 import { IoIosCloseCircle } from "react-icons/io";
-import { Bounce, ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Bounce, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import NavDesktop from "../components/NavDesktop";
 
 const Carrinho = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [carrinho, setCarrinho] = useState([])
+  const [carrinho, setCarrinho] = useState([]);
 
   useEffect(() => {
     const pegarCarrinho = () => {
-      const car = localStorage.getItem("carrinho")
+      const car = localStorage.getItem("carrinho");
       if (car) {
-        const carrinho = JSON.parse(car)
-        setCarrinho(carrinho.map((item) => JSON.parse(item)))
+        const carrinho = JSON.parse(car);
+        setCarrinho(carrinho.map((item) => JSON.parse(item)));
       }
-    }
-    pegarCarrinho()
-    document.title = 'Rush | Pedidos'
-  }, [])
+    };
+    pegarCarrinho();
+    document.title = "Rush | Pedidos";
+  }, []);
 
   const deletarItem = (itemId) => {
-    carrinho.pop(itemId)
-    const items = carrinho.map((item) => JSON.stringify(item))
-    const novoCarrinho = JSON.stringify(items)
-    localStorage.setItem("carrinho", novoCarrinho)
-    toast.success('Produto deletado com sucesso!', {
+    carrinho.pop(itemId);
+    const items = carrinho.map((item) => JSON.stringify(item));
+    const novoCarrinho = JSON.stringify(items);
+    localStorage.setItem("carrinho", novoCarrinho);
+    toast.success("Produto deletado com sucesso!", {
       position: "top-right",
       autoClose: 2000,
       hideProgressBar: true,
@@ -53,16 +54,19 @@ const Carrinho = () => {
       transition: Bounce,
     });
     setTimeout(() => {
-      window.location.reload()
+      window.location.reload();
     }, 1000);
-  }
+  };
 
   return (
     <>
       <ToastContainer />
+      <NavDesktop />
       <StyledNav>
         <FiMenu fontSize={"2rem"} onClick={() => setIsOpen(!isOpen)} />
-        <Link to={'/'}><IoCloseOutline fontSize={"2.5rem"} color="black" /></Link>
+        <Link to={"/"}>
+          <IoCloseOutline fontSize={"2.5rem"} color="black" />
+        </Link>
         <MenuBurger isOpen={isOpen} />
         <StyledBackgroundMenuBurger
           onClick={() => setIsOpen(!isOpen)}
@@ -75,14 +79,23 @@ const Carrinho = () => {
       <MainContainer>
         <Titulo>Carrinho</Titulo>
 
-        {carrinho.length < 1 ? <>
-          <p>Seu carrinho esta vazio</p>
-        </> :
+        {carrinho.length < 1 ? (
+          <div
+            style={{
+              width: "100%",
+              height: "40dvh",
+              display: "grid",
+              placeItems: "center",
+            }}
+          >
+            <p>Seu carrinho esta vazio</p>
+          </div>
+        ) : (
           carrinho.map((item, index) => {
             return (
               <CardCarrinho key={index++}>
                 <DeleteItemButton onClick={() => deletarItem(item.id)}>
-                  <IoIosCloseCircle size={23} color="#f00404"/>
+                  <IoIosCloseCircle size={23} color="#f00404" />
                 </DeleteItemButton>
                 <div>
                   <img alt="Imagem do Produto" src={item.src} />
@@ -95,17 +108,18 @@ const Carrinho = () => {
                   </CardCarrinhoBottom>
                 </CardCarrinhoInfos>
               </CardCarrinho>
-            )
+            );
           })
-        }
-
+        )}
       </MainContainer>
       <CarrinhoFooter>
         <CarrinhoFooterInfos>
           <h2>Total</h2>
           <p>R${carrinho.reduce((acc, item) => acc + item.preco, 0)}</p>
         </CarrinhoFooterInfos>
-        <Link to={'/finalizarcompra'}><FinalizarCompra>Finalizar</FinalizarCompra></Link>
+        <Link to={"/finalizarcompra"}>
+          <FinalizarCompra>Finalizar</FinalizarCompra>
+        </Link>
       </CarrinhoFooter>
     </>
   );
