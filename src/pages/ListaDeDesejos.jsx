@@ -6,6 +6,7 @@ import {
   ItemInfos,
   ItemListaDeDesejos,
   MainContainerListaDeDesejos,
+  SemItens,
   TituloListaDesejos,
 } from "../styles/StyleListaDeDesejos";
 
@@ -29,7 +30,7 @@ const ListaDeDesejos = () => {
       <MainContainerListaDeDesejos>
         <TituloListaDesejos>Lista de desejos</TituloListaDesejos>
         <ItemListaDeDesejos>
-          {favoritos.map((item) => (
+          {favoritos.length > 0 ? favoritos.map((item) => (
             <ItemInfos>
               <div>
                 <img src={item.src} />
@@ -38,8 +39,8 @@ const ListaDeDesejos = () => {
                 <h2>{item.nome}</h2>
                 <IoHeartSharp color="red" size={25} />
               </div>
-            </ItemInfos>
-          ))}
+            </ItemInfos> 
+          )) : <SemItens>Sem itens desejados.</SemItens>}
         </ItemListaDeDesejos>
       </MainContainerListaDeDesejos>
     </>

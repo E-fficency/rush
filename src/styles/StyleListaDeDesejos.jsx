@@ -33,3 +33,11 @@ export const ItemInfos = styled.div`
     border-bottom: 1px solid black;
     padding-bottom: 1rem;
 `
+
+export const SemItens = styled.h2`
+    display: flex;
+    margin: 10rem 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+`
