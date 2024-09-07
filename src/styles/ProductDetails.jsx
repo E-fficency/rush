@@ -22,7 +22,7 @@ export const StyledImg = styled.div`
   height: 60vh;
   width: 100%;
   img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
     padding: 0 1.2rem;

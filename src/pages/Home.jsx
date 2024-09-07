@@ -5,6 +5,7 @@ import ProductList from "../components/ProductList";
 import HomeDesktop from "../components/HomeDesktop";
 import homeData from '../mocks/homeData'
 import { useEffect } from "react";
+import FooterDesktop from "../components/FooterDesktop";
 
 function Home() {
 
@@ -29,6 +30,7 @@ function Home() {
           />
         ))}
       </Container>
+      <FooterDesktop/>
       <Footer />
     </>
   );
