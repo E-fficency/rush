@@ -824,9 +824,10 @@ Error generating stack: `+i.message+`
     padding: 1rem;
 `,a5=N.h1`
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
 `,s5=N.div`
     display: flex;
     flex-direction: column;
@@ -845,7 +846,7 @@ Error generating stack: `+i.message+`
     padding-bottom: 1rem;
 `,c5=N.h2`
     display: flex;
-    margin: 10rem 0;
+    
     justify-content: center;
     align-items: center;
     font-weight: 400;
