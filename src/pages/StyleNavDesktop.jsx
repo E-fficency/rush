@@ -7,6 +7,9 @@ export const StyledNavDesktop = styled.nav`
     span{
         font-size: 1.1rem;
     }
+    @media (max-width: 768px){
+        display: none;
+    }
 `
 
 export const ItemNavDesktop = styled.div`
