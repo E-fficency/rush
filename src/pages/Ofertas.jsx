@@ -9,17 +9,14 @@ function Ofertas() {
   const produtosOfertas = [...ofertas, ...ofertas, ...ofertas];
 
   useEffect(() => {
-    document.title = 'Rush | Ofertas'
-  })
+    document.title = "Rush | Ofertas";
+  });
   return (
     <>
-    <NavDesktop/>
+      <NavDesktop />
       <Nav />
-      <HeaderProduct
-        titulo="Ofertas"
-        subtitulo="Produtos em promoção"
-      />
-      <ProductPage products={produtosOfertas} />;
+      <HeaderProduct titulo="Ofertas" subtitulo="Produtos em promoção" />
+      <ProductPage products={produtosOfertas} titulo="Ofertas" />;
     </>
   );
 }
