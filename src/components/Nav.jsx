@@ -12,9 +12,9 @@ function Nav() {
   const [isBuscaOpen, setIsBuscaOpen] = useState(false);
   return (
     <StyledNav>
-      <FiMenu fontSize={"2em"} onClick={() => setIsOpen(!isOpen)} />
-        <img src={logo} alt="" />
-      <CiSearch fontSize={"2em"} onClick={() => setIsBuscaOpen(!isBuscaOpen)} />
+      <FiMenu fontSize={"2em"} style={{ cursor: "pointer" }} onClick={() => setIsOpen(!isOpen)} />
+      <img src={logo} alt="" />
+      <CiSearch fontSize={"2em"} style={{ cursor: "pointer" }} onClick={() => setIsBuscaOpen(!isBuscaOpen)} />
       <MenuBurger isOpen={isOpen} />
       <Busca isOpen={isBuscaOpen} setIsOpen={setIsBuscaOpen} />
       <StyledBackgroundMenuBurger

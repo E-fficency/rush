@@ -16,6 +16,9 @@ export const StyledMenuBurger = styled.menu`
   z-index: 110;
   border-radius: 0 20px 20px 0;
   transition: all 0.3s ease-out;
+  @media (min-width: 850px) {
+    width: 20%;
+  }
 `;
 
 export const StyleProfileBlock = styled.div`
