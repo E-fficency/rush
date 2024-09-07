@@ -9,6 +9,7 @@ import {
   SemItens,
   TituloListaDesejos,
 } from "../styles/StyleListaDeDesejos";
+import { StyledNavDesktop } from "./StyleNavDesktop";
 
 const ListaDeDesejos = () => {
   const [favoritos, setFavoritos] = useState([]);
@@ -22,6 +23,7 @@ const ListaDeDesejos = () => {
 
   return (
     <>
+    <StyledNavDesktop/>
       <StyledNav>
         <Link to={"/"}>
           <IoArrowBackOutline fontSize={"2em"} color={"black"} />
