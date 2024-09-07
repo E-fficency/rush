@@ -4,8 +4,12 @@ export const StyledNavDesktop = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 1rem;
-    span{
+
+    button{
         font-size: 1.1rem;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
     }
     @media (max-width: 768px){
         display: none;
@@ -14,6 +18,7 @@ export const StyledNavDesktop = styled.nav`
 
 export const ItemNavDesktop = styled.div`
     display: flex;
+    align-items: center;
     gap: 1rem;
     img{
         width: 150px;
