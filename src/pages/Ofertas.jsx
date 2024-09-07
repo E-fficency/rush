@@ -3,6 +3,7 @@ import ProductPage from "../components/ProductPage";
 import Nav from "../components/Nav.jsx";
 import HeaderProduct from "../components/HeaderProduct.jsx";
 import { useEffect } from "react";
+import NavDesktop from "../components/NavDesktop.jsx";
 
 function Ofertas() {
   const produtosOfertas = [...ofertas, ...ofertas, ...ofertas];
@@ -12,6 +13,7 @@ function Ofertas() {
   })
   return (
     <>
+    <NavDesktop/>
       <Nav />
       <HeaderProduct
         titulo="Ofertas"
