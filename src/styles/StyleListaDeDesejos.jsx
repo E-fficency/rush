@@ -12,7 +12,7 @@ export const TituloListaDesejos = styled.h1`
     justify-content: start;
     margin-bottom: 2rem;
     font-size: 1.5rem;
-    font-weight: 400;a
+    font-weight: 400;
 `
 
 export const ItemListaDeDesejos = styled.div`

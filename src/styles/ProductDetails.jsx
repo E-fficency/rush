@@ -27,8 +27,9 @@ export const StyledImg = styled.div`
     height: 100%;
     padding: 0 1.2rem;
   }
-  @media (min-width: 600px) {
-    height: 80vh;
+  @media (min-width: 768px) {
+    height: 60dvh;
+    object-fit: cover;
   }
 `;
 
