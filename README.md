@@ -5,6 +5,6 @@
   <li>Camila Feitosa RM:558808</li>
   <li>Gabriel Matiolli RM:558963</li>
   <li>Gustavo Berlanga RM:555298</li>
-  <li>Leonardo Taschin</li>
+  <li>Leonardo Taschin RM554583</li>
   <li>Vinicius Gardim rm:556013</li>
 </ul>
