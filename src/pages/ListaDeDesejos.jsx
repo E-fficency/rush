@@ -45,7 +45,7 @@ const ListaDeDesejos = () => {
           )) : <SemItens>Sem itens desejados.</SemItens>}
         </ItemListaDeDesejos>
       </MainContainerListaDeDesejos>
-    </StyledNavD>
+    </>
   );
 };
 
