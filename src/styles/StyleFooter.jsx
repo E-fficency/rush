@@ -3,14 +3,13 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
   width: 100%;
   height: 10dvh;
-  background-color: #1f1f1f;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 100;
   top: 90dvh;
-  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.2);
   @media (min-width: 600px) {
     display: none;
   }
@@ -20,7 +19,8 @@ export const StyledFooter = styled.footer`
 export const StyledDivButtonsFooter = styled.div`
   width: 95%;
   height: 80%;
-  background-color: #d9d9d930;
+  background-color: #ffffff;
+  border: 1px solid #0000002d;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
