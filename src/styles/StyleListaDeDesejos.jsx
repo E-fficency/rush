@@ -9,9 +9,10 @@ export const MainContainerListaDeDesejos = styled.main`
 
 export const TituloListaDesejos = styled.h1`
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;a
 `
 
 export const ItemListaDeDesejos = styled.div`
@@ -36,7 +37,7 @@ export const ItemInfos = styled.div`
 
 export const SemItens = styled.h2`
     display: flex;
-    margin: 10rem 0;
+    
     justify-content: center;
     align-items: center;
     font-weight: 400;
