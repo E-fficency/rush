@@ -7,7 +7,7 @@ export const Footer = styled.footer`
   height: 18dvh;
   align-items: center;
   justify-content: space-around;
-  background-color: #F2F2F2;
+  background-color: #ffffff;
   box-shadow: 0px 1px 18.1px 0px rgba(0, 0, 0, 0.13);
   position: fixed;
   z-index: 100;
