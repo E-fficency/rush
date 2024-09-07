@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Container, InfoProducts, Imagem, Infos, Button} from "../styles/StyleHomeDesktop.jsx";
+import NavDesktop from "./NavDesktop.jsx";
 
 
 function HomeDesktop({flex, justify='start', img, produto, titulo, descricao, rota}){

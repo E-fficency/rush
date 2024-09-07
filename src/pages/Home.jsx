@@ -6,6 +6,7 @@ import HomeDesktop from "../components/HomeDesktop";
 import homeData from '../mocks/homeData'
 import { useEffect } from "react";
 import FooterDesktop from "../components/FooterDesktop";
+import NavDesktop from "../components/NavDesktop";
 
 function Home() {
 
@@ -14,6 +15,7 @@ function Home() {
   })
   return (
     <>
+    <NavDesktop/>
       <Nav />
       <ProductList />
       <Container>
