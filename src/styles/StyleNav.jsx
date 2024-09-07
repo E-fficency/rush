@@ -7,4 +7,7 @@ export const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding-inline: 1em;
+  @media (min-width: 600px) {
+    display: none;
+  }
 `;
