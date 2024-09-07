@@ -3,8 +3,7 @@ import emAlta from "../mocks/alta.jsx";
 import materialEsportivo from "../mocks/material-esportivo.jsx";
 import ofertas from "../mocks/ofertas.jsx";
 import NavProduct from "../components/NavProduct";
-import { IoHeartOutline } from "react-icons/io5";
-import { IoHeartSharp } from "react-icons/io5";
+import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import Retangulo from "../assets/images/Rectangle.png";
 import {
   MainProductDetails,
